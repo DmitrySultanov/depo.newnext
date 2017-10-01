@@ -21,6 +21,9 @@ $(document).ready(function(){
 					required: true,
 					minlength: 3
 				},
+				type_user: {
+					required: true,
+				},
 				password: {
 					required: true,
 					minlength: 6
@@ -92,7 +95,7 @@ $(document).ready(function(){
 		$this.submit(function(){
 
 			if($this.valid()){
-		        alert('Успешно');
+		        // alert('Успешно');
 		        // $this.find('input').val('').removeClass('error');
 		        // $this.find('select').val(null).trigger("change").removeClass('error');
 		        // $this.find('span.error').hide();
@@ -187,7 +190,7 @@ $(document).ready(function(){
 		$this.submit(function(){
 
 			if($this.valid()){
-		       $(this).parents('.r-window').hide(0).next('.r-window').addClass('active');
+		       $(this).parents('.r-window').removeClass('active').hide(0).next('.r-window').addClass('active');
 		       if($('.r-window.active').find('.dynamicNumber').length != 0){
 		       	setTimeout(function(){
 		       		$('.dynamicNumber').dynamicNumber('start');

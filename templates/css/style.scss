@@ -1049,7 +1049,7 @@ h1{
 
 		&.selectReq{
 			select + span.error{
-				top: 45px;
+				top: 48px;
 				position: absolute;
 				margin-top: 2px;
 			}
@@ -3377,8 +3377,6 @@ i.online{
 
 @media screen and(max-width: 1024px){
 	header{
-		height: auto;
-
 		.search-panel{
 			width: 100%;
 			float: none;
@@ -3805,6 +3803,7 @@ i.online{
 	font-size: 14px;
 	height: 44px;
 	z-index: 44;
+	margin-top: 0!important;
 
 	&:hover{
 		border-color: #c6cad3;

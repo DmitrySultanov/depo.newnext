@@ -14,7 +14,7 @@
 					<div class="logo"><a href="#"><img src="templates/img/logo.jpg" alt=""/></a></div>
 					<div class="entrance-panel">
 						<div class="form">
-							<form action="mail.php" target="post_form">
+							<form action="" target="post_form">
 								<div class="element">
 									<input type="text" name="login" class="phone required" placeholder="Логин" data-msg-required="Заполните поле" />
 								</div>
@@ -103,7 +103,7 @@
 										<div class="element">
 											<strong>Код из SMS</strong>
 											<div class="sms-code">
-												<input type="text" class="onlyNumber required" name="smscode" data-msg-required="Заполните поле" />
+												<input type="text" class="required" name="smscode" data-msg-required="Заполните поле" />
 												<div class="counter-down"><span class="dynamicNumber" data-from="120" data-to="0">120</span> сек</div>
 											</div>
 										</div>

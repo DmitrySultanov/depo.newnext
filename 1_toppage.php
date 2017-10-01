@@ -72,15 +72,17 @@
 					<div class="rightcolumn">
 						<h1>Регистрация</h1>
 						<div class="form">
-							<form action="mail.php" target="post_form">
+							<form action="" target="post_form">
 								<div class="element selectReq">
 									<strong>Тип участника</strong>
-									<select name="type_user" data-placeholder="Входящие" class="select-single required" data-msg-required="Заполните поле">
-										<option></option>
-										<option>Новатор</option>
-										<option>Соинвестор</option>
-										<option>Проектор</option>
-									</select>
+									<div class="select">
+										<select name="type_user" data-placeholder="Входящие" class="select-req select-single required" data-msg-required="Заполните поле">
+											<option></option>
+											<option>Новатор</option>
+											<option>Соинвестор</option>
+											<option>Проектор</option>
+										</select>
+									</div>
 								</div>
 								<div class="element">
 									<strong>Имя</strong>
