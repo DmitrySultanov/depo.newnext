@@ -135,8 +135,12 @@
 													</div>
 												</div>
 												<div class="element">
-													<p>Адрес проживания</p>
-													<input type="text" class="required" name="adress" data-msg-required="Заполните поле" />
+													<p>Страна</p>
+													<input type="text" class="required" name="country" data-msg-required="Заполните поле" />
+												</div>
+												<div class="element">
+													<p>Город</p>
+													<input type="text" class="required" name="city" data-msg-required="Заполните поле" />
 												</div>
 												<button type="submit" class="orange-btn">Далее</button>
 											</form>
