@@ -251,8 +251,11 @@ $proektant-clr: #9c27b0;
 header{
 	height: 70px;
 	background: #fff;
-	padding-top: 13px;
 	@include box-shadow(0px 4px 8px rgba(38, 51, 70, 0.1));
+
+	>.container{
+		padding: 13px 0 25px;
+	}
 
 	.menu-btn{
 		display: none;
@@ -869,31 +872,6 @@ h1{
 	display: none;
 }
 
-// .tooltipster-light{
-// 	background: #fcf5ac;
-// 	max-width: 225px;
-// 	@include box-shadow(0 10px 20px rgba(0,0,0, .25));
-// 	border-radius: 5px;
-
-// 	.tooltipster-box{
-// 		background: transparent;
-// 		border: none;
-// 		margin: 0!important;
-
-// 		.tooltipster-content{
-// 			font-size: 13px;
-// 			line-height: 18px;
-// 			color: #292828;
-// 			padding: 14px!important;
-// 		}
-// 	}
-
-// 	.tooltipster-arrow{
-// 		display: none;
-// 		border-radius: 5px;
-// 	}
-// }
-
 .tooltipster-dark{
 	background: #6d8598;
 	border-radius: 3px;
@@ -1034,7 +1012,6 @@ h1{
 	    margin-left: 8px;
 	}
 }
-
 
 .form, .form-pass-recovery{
 	.element{
@@ -3210,6 +3187,84 @@ i.online{
 	}
 }
 
+
+.notification{
+	height: 70px;
+	background: #d2524d;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	font-size: 16px;
+	color: #fff;
+	@include transition(.2s);
+	text-align: center;
+
+	.flex{
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+
+	.close-notify{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		margin-top: -7px;
+	}
+
+	.container{
+		height: 100%;
+	}
+
+	i.panton{
+		font-size: 30px;
+		margin-right: 10px;
+	}
+
+	strong{
+		margin-right: 5px;
+	}
+
+
+	&.error{
+		border-top-color: #d2524d;
+		border-bottom-color: #d2524d;
+		background: rgba(210, 82, 77, 0.85);
+
+		&:hover{
+			background: #d2524d;
+		}
+	}
+
+	&.warnings{
+		border-top-color: #fbef59;
+		border-bottom-color: #fbef59;
+		background: rgba(251, 239, 89, 0.85);
+		color: #3d3c39;
+
+		&:hover{
+			background: #fbef59;
+		}
+	}
+
+	&.success{
+		border-top-color: #52bb66;
+		border-bottom-color: #52bb66;
+		background: rgba(82, 187, 102, 0.85);
+
+		&:hover{
+			background: #52bb66;
+		}
+	}
+
+	&.info{
+		border-top-color: #5592f3;
+		border-bottom-color: #5592f3;
+		background: rgba(85, 146, 243, 0.85);
+
+		&:hover{
+			background: #5592f3;
+		}
+	}
+}
 
 .pushy-left{
 	@include transform(translate3d(-250px, 0, 0));

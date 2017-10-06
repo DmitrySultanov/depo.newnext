@@ -6,7 +6,7 @@
 	<? include('inc/head.php'); ?>
 </head>
 <body>
-	<div class="reg-screen"></div>
+	<!-- <div class="reg-screen"></div> -->
 	<div class="wrapper pb0">
 		<div class="registration-body">
 			<header>
@@ -55,6 +55,38 @@
 						</div>
 					</div>
 				</div>
+				<div class="notification error">
+					<div class="container">
+						<div class="flex align">
+							<i class="panton b">e</i><strong>Ошибка!</strong> Отправка данных не завершена и причина почему.
+							<a href="#" class="close-notify"><img src="templates/img/w-arrow.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="notification warnings">
+					<div class="container">
+						<div class="flex align">
+							<i class="panton d">i</i><strong>Предупреждение!</strong> Обнаружены проблемы с сетевым соединением.
+							<a href="#" class="close-notify"><img src="templates/img/w-arrow.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+				<div class="notification success">
+					<div class="container">
+						<div class="flex align">
+							<i class="panton c">G</i><strong>Отправлено успешно!</strong> Ваша заявка отправлена на модерацию.
+							<a href="#" class="close-notify"><img src="templates/img/w-arrow.png" alt=""/></a>
+						</div>
+					</div>
+				</div>
+				<div class="notification info">
+					<div class="container">
+						<div class="flex align">
+							<i class="panton d">B</i><strong>Уведомление!</strong> Добро пожаловать на сайт New Next.
+							<a href="#" class="close-notify"><img src="templates/img/w-arrow.png" alt=""/></a>
+						</div>
+					</div>
+				</div> -->
 			</header>
 			<div class="flex center">
 				<div class="reg-panel clearfix">
