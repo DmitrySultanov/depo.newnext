@@ -3198,6 +3198,10 @@ i.online{
 	@include transition(.2s);
 	text-align: center;
 
+	&.small{
+		height: 60px;
+	}
+
 	.flex{
 		justify-content: center;
 		-webkit-justify-content: center;
