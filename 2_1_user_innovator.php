@@ -163,7 +163,7 @@
 						</div>
 
 						<div class="side-block recommended">
-							<div class="tabs-wrapper ">
+							<div class="tabs-wrapper">
 								<div class="sb-title">
 									<button type="button" class="remove-btn"></button>
 									<ul class="tabs">

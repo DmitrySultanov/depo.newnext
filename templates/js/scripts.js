@@ -98,9 +98,9 @@ $(document).ready(function(){
     var $link = $('.see_more');
 
     $link.on('click', function(){
-      $link.toggleClass('active');
+      $(this).toggleClass('active');
 
-      if($link.hasClass('active')){
+      if($(this).hasClass('active')){
         $(this).text('Свернуть');
         $(this).siblings('._hidden').slideDown();
       } else{

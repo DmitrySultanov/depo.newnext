@@ -56,12 +56,12 @@
 					</div>
 				</div>
 				<div class="notification error">
-					<div class="container">
+					<!-- <div class="container"> -->
 						<div class="flex align">
 							<i class="panton b">e</i><strong>Ошибка!</strong> Отправка данных не завершена и причина почему.
 							<a href="#" class="close-notify"><img src="templates/img/w-arrow.png" alt=""/></a>
 						</div>
-					</div>
+					<!-- </div> -->
 				</div>
 				<!-- <div class="notification warnings">
 					<div class="container">
@@ -95,11 +95,11 @@
 						используемый в печати  вэб-дизайне. </article>
 						<p>В то время некий безымянный печатник создал 
 						большую коллекцию размеров</p>
-						<div class="reg-soc-btns">
+						<!-- <div class="reg-soc-btns">
 							<p>Регистрация через соцсети</p>
 							<a href="#" class="vk">Вконтакте</a>
 							<a href="#" class="fb">Facebook</a>
-						</div>
+						</div> -->
 					</div>
 					<div class="rightcolumn">
 						<h1>Регистрация</h1>

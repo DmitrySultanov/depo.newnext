@@ -254,7 +254,16 @@ header{
 	@include box-shadow(0px 4px 8px rgba(38, 51, 70, 0.1));
 
 	>.container{
-		padding: 13px 0 25px;
+		padding: 12px 10px 12px;
+
+		&:after {
+		   content: ".";
+		   visibility: hidden;
+		   display: block;
+		   height: 0;
+		   clear: both;
+		   font-size: 0;
+		}
 	}
 
 	.menu-btn{
@@ -521,7 +530,7 @@ header{
 				height: 3px;
 				background-color: #fc8347;
 				position: absolute;
-				bottom: -29px;
+				bottom: -30px;
 				left: 0;
 				right: 0;
 				display: none;
@@ -753,12 +762,21 @@ i.panton{
 				padding: 15px 0;
 				font-size: 14px;
 				color: #405f9c;
-				padding-left: 14px;
+				padding-left: 13px;
 				text-decoration: none;
 				display: block;
 
 				i.fa{
 					margin-right: 11px;
+				}
+
+				i.panton{
+					font-size: 18px;
+					top: -1px;
+				    position: relative;
+				    width: 20px;
+				    display: inline-block;
+				    margin-right: 7px;
 				}
 			}
 
@@ -1241,7 +1259,6 @@ h1{
 		.leftcolumn{
 			float: left;
 			width: 300px;
-			border-right: 1px solid #e8e8e9;
 			padding: 30px 30px 130px;
 			position: relative;
 
@@ -1261,6 +1278,7 @@ h1{
 			float: left;
 			padding: 30px 30px 30px 30px;
 			width: calc(100% - 300px);
+			border-left: 1px solid #e8e8e9;
 
 			h1{
 				margin-bottom: 20px;
@@ -2496,6 +2514,86 @@ h1{
 				}
 			}
 		}
+
+		&.contacts{
+			.tabs{
+				padding: 13px 0 7px;
+
+				li{
+					font-size: 18px;
+					margin-right: 18px;
+					color: #3f6fa5;
+					padding: 0!important;
+
+					i{
+						font-style: normal;
+						font-size: 14px;
+						color: #a1abb7;
+						font-family: 'OpenSans';
+					}
+
+					&:after{
+						display: none;
+					}
+
+					span{
+						display: inline-block;
+						position: relative;
+
+						&:after{
+							content: '';
+							width: 100%;
+							height: 2px;
+							background: #ff8841;
+							position: absolute;
+							bottom: -22px;
+							left: 0;
+							right: 0;
+							@include transition(.2s);
+							opacity: 0;
+						}
+					}
+
+
+					&.active{
+						color: #302e2e;
+
+						span{
+
+							&:after{
+								@include transition(.2s);
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+
+			.s-messages{
+				padding-bottom: 9px;
+
+				.mes-list li .s-contact-info{
+					padding-top: 12px;
+				}
+			} 
+
+			._hidden{
+				.s-messages{
+					.mes-list li:first-child{
+
+						&:before{
+							content: '';
+							width: calc(100% - 92px);
+							background: #dee2e8;
+							height: 1px;
+							position: absolute;
+							top: 0;
+							right: 0;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.news-contacts{
@@ -2998,6 +3096,14 @@ i.online{
 	border-radius: 50%;
 	margin-right: 5px;
 }
+i.offline{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #9ea7ae;
+	border-radius: 50%;
+	margin-right: 5px;
+}
 
 .s-messages{
 	padding-bottom: 20px;
@@ -3205,12 +3311,16 @@ i.online{
 	.flex{
 		justify-content: center;
 		-webkit-justify-content: center;
+		width: 100%;
+		max-width: 1190px;
+	    margin: auto;
+	    padding: 0 10px;
 	}
 
 	.close-notify{
 		position: absolute;
 		top: 50%;
-		right: 0;
+		right: 10px;
 		margin-top: -7px;
 	}
 
@@ -3436,6 +3546,12 @@ i.online{
 
 @media screen and(max-width: 1024px){
 	header{
+		height: auto;
+
+		>.container{
+			padding: 10px 10px;
+		}
+
 		.search-panel{
 			width: 100%;
 			float: none;
@@ -3521,8 +3637,7 @@ i.online{
 	}
 
 	header{
-		height: 60px;
-		padding: 10px 0 0;
+		min-height: 60px;
 
 		.logo{
 			margin: 10px 0;
@@ -3552,7 +3667,7 @@ i.online{
 		}
 
 		.search-panel{
-			padding: 10px 0 10px 0;
+			padding: 0;
 		}
 	}
 
