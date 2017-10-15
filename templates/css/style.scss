@@ -172,6 +172,7 @@ $proektant-clr: #9c27b0;
 	padding: 0 16px 0 16px;
 	background-color: transparent;
 	position: relative;
+	vertical-align: top;
 
 	&.s-btn{
 		height: 34px;
@@ -231,6 +232,27 @@ $proektant-clr: #9c27b0;
 	&:active{
 		background: #f2f4f4;
 		color: #e2731b;
+	}
+}
+
+.pink-btn{
+	font-size: 14px;
+	color: #666e7f;
+	border: 1px solid #f0c8c6;
+	padding: 9px 18px;
+	border-radius: 3px;
+	background: #fff;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'OpenSans-Semibold';
+	vertical-align: top;
+
+	&:hover{
+		color: #f33b3b;
+	}
+
+	&:active{
+		background: #fadddc;
 	}
 }
 
@@ -2569,17 +2591,71 @@ h1{
 				}
 			}
 
+			.see_more{
+				margin: 9px 0 -5px 0;
+			}
+
 			.s-messages{
-				padding-bottom: 9px;
+				padding-bottom: 0px;
 
 				.mes-list li .s-contact-info{
 					padding-top: 12px;
 				}
+
+				.mes-list.requests{
+					.s-contact-info{
+						padding-top: 0;
+					}
+
+					.general-contacts{
+						font-size: 14px;
+						color: #3f6fa5;
+						margin: 10px 0;
+					}
+
+					.btns{
+						position: relative;
+						z-index: 33;
+					}
+
+					.gray-btn.s-btn{
+						background: #fff;
+
+						&:active{
+							background: #f2f4f4;
+						}
+					}
+
+					li{
+						&.peach-bgr{
+							.hover{
+								background: #fffde7;
+								opacity: 1;
+							}
+
+							&:hover{
+								.hover{
+									background: #f2f9fb;
+								}
+							}
+						}
+					}
+				}
 			} 
 
 			._hidden{
+				position: relative;
+				top: -1px;
+
 				.s-messages{
+					.mes-list{
+						margin-bottom: -1px;
+					}
 					.mes-list li:first-child{
+
+						.hover{
+							top: 0;
+						}
 
 						&:before{
 							content: '';

@@ -196,45 +196,57 @@
 										</ul>
 									</div>
 									</div>
-									<button type="button" class="see_more mt0">Показать еще</button>
+									<button type="button" class="see_more">Показать еще</button>
 								</li>
 								<li>
 									<div class="s-messages">
-										<ul class="mes-list">
-											<li>
+										<ul class="mes-list requests">
+											<li class="peach-bgr">
 												<div class="hover"></div>
 												<a href="#"></a>
 												<img src="templates/img/user_pic2.jpg" alt=""/>
 												<div class="s-contact-info">
 													<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
 													<div class="contact-status coinvestor">Соинвестор</div>
-
+													<div class="general-contacts">2 общих контакта</div>
+													<div class="btns">
+														<a href="#" class="gray-btn s-btn add">Добавить контакт</a>
+														<a href="#" class="pink-btn s-btn">Отклонить</a>
+													</div>
 													<div class="right-mes-desc">
 														<span class="time">Был в 10:02</span>
 													</div>
 												</div>
 											</li>
-											<li>
+											<li class="peach-bgr">
 												<div class="hover"></div>
 												<a href="#"></a>
 												<img src="templates/img/user_pic1.jpg" alt=""/>
 												<div class="s-contact-info">
 													<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
 													<div class="contact-status investor">Инвестор</div>
-
+													<div class="general-contacts">12 общих контакта</div>
+													<div class="btns">
+														<a href="#" class="gray-btn s-btn add">Добавить контакт</a>
+														<a href="#" class="pink-btn s-btn">Отклонить</a>
+													</div>
 													<div class="right-mes-desc">
 														<span class="time">Был вчера</span>
 													</div>
 												</div>
 											</li>
-											<li>
+											<li class="peach-bgr">
 												<div class="hover"></div>
 												<a href="#"></a>
 												<img src="templates/img/user_pic2.jpg" alt=""/>
 												<div class="s-contact-info">
 													<div class="contact-name"><i class="online"></i>Фамилия Имя</div>
 													<div class="contact-status proektant">Проектант</div>
-
+													<div class="general-contacts">2 общих контакта</div>
+													<div class="btns">
+														<a href="#" class="gray-btn s-btn add">Добавить контакт</a>
+														<a href="#" class="pink-btn s-btn">Отклонить</a>
+													</div>
 													<div class="right-mes-desc">
 														<span class="time">В сети</span>
 													</div>
@@ -247,7 +259,11 @@
 												<div class="s-contact-info">
 													<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
 													<div class="contact-status investor">Инвестор</div>
-
+													<div class="general-contacts">2 общих контакта</div>
+													<div class="btns">
+														<a href="#" class="gray-btn s-btn add">Добавить контакт</a>
+														<a href="#" class="pink-btn s-btn">Отклонить</a>
+													</div>
 													<div class="right-mes-desc">
 														<span class="time">Был вчера</span>
 													</div>
@@ -260,48 +276,13 @@
 												<div class="s-contact-info">
 													<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
 													<div class="contact-status coinvestor">Соинвестор</div>
-
+													<div class="general-contacts">2 общих контакта</div>
+													<div class="btns">
+														<a href="#" class="gray-btn s-btn add">Добавить контакт</a>
+														<a href="#" class="pink-btn s-btn">Отклонить</a>
+													</div>
 													<div class="right-mes-desc">
 														<span class="time">Был в 10:02</span>
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="hover"></div>
-												<a href="#"></a>
-												<img src="templates/img/user_pic1.jpg" alt=""/>
-												<div class="s-contact-info">
-													<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
-													<div class="contact-status investor">Инвестор</div>
-
-													<div class="right-mes-desc">
-														<span class="time">Был вчера</span>
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="hover"></div>
-												<a href="#"></a>
-												<img src="templates/img/user_pic3.jpg" alt=""/>
-												<div class="s-contact-info">
-													<div class="contact-name"><i class="online"></i>Фамилия Имя</div>
-													<div class="contact-status coinvestor">Соинвестор</div>
-
-													<div class="right-mes-desc">
-														<span class="time">В сети</span>
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="hover"></div>
-												<a href="#"></a>
-												<img src="templates/img/user_pic1.jpg" alt=""/>
-												<div class="s-contact-info">
-													<div class="contact-name"><i class="online"></i>Фамилия Имя</div>
-													<div class="contact-status investor">Инвестор</div>
-
-													<div class="right-mes-desc">
-														<span class="time">В сети</span>
 													</div>
 												</div>
 											</li>
@@ -309,37 +290,45 @@
 									</div>
 									<div class="_hidden pt0">
 										<div class="s-messages">
-										<ul class="mes-list">
-											<li>
-												<div class="hover"></div>
-												<a href="#"></a>
-												<img src="templates/img/user_pic2.jpg" alt=""/>
-												<div class="s-contact-info">
-													<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
-													<div class="contact-status coinvestor">Соинвестор</div>
-
-													<div class="right-mes-desc">
-														<span class="time">Был в 10:02</span>
+											<ul class="mes-list requests">
+												<li class="peach-bgr">
+													<div class="hover"></div>
+													<a href="#"></a>
+													<img src="templates/img/user_pic2.jpg" alt=""/>
+													<div class="s-contact-info">
+														<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
+														<div class="contact-status coinvestor">Соинвестор</div>
+														<div class="general-contacts">2 общих контакта</div>
+														<div class="btns">
+															<a href="#" class="gray-btn s-btn add">Добавить контакт</a>
+															<a href="#" class="pink-btn s-btn">Отклонить</a>
+														</div>
+														<div class="right-mes-desc">
+															<span class="time">Был в 10:02</span>
+														</div>
 													</div>
-												</div>
-											</li>
-											<li>
-												<div class="hover"></div>
-												<a href="#"></a>
-												<img src="templates/img/user_pic1.jpg" alt=""/>
-												<div class="s-contact-info">
-													<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
-													<div class="contact-status investor">Инвестор</div>
-
-													<div class="right-mes-desc">
-														<span class="time">Был вчера</span>
+												</li>
+												<li class="peach-bgr">
+													<div class="hover"></div>
+													<a href="#"></a>
+													<img src="templates/img/user_pic1.jpg" alt=""/>
+													<div class="s-contact-info">
+														<div class="contact-name"><i class="offline"></i>Фамилия Имя</div>
+														<div class="contact-status investor">Инвестор</div>
+														<div class="general-contacts">2 общих контакта</div>
+														<div class="btns">
+															<a href="#" class="gray-btn s-btn add">Добавить контакт</a>
+															<a href="#" class="pink-btn s-btn">Отклонить</a>
+														</div>
+														<div class="right-mes-desc">
+															<span class="time">Был вчера</span>
+														</div>
 													</div>
-												</div>
-											</li>
-										</ul>
+												</li>
+											</ul>
+										</div>
 									</div>
-									</div>
-									<button type="button" class="see_more mt0">Показать еще</button>
+									<button type="button" class="see_more">Показать еще</button>
 								</li>
 							</ul>
 						</div>
@@ -421,6 +410,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<footer>
 		<div class="container">
