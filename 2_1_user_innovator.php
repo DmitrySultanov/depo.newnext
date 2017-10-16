@@ -92,7 +92,7 @@
 			<div class="after-header-panel innovator">
 				<div class="container">
 					<div class="user-category">
-						<i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>
+						<img class="check" src="templates/img/tick-4.svg" alt="">
 						<div class="flex align">
 							<div>
 								<span>Новатор</span>

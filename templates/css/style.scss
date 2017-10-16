@@ -236,10 +236,11 @@ $proektant-clr: #9c27b0;
 }
 
 .pink-btn{
-	font-size: 14px;
+	font-size: 13px;
+	height: 34px;
 	color: #666e7f;
 	border: 1px solid #f0c8c6;
-	padding: 9px 18px;
+	padding: 10px 18px 9px;
 	border-radius: 3px;
 	background: #fff;
 	display: inline-block;
@@ -1616,6 +1617,10 @@ h1{
 
 		&.investor{
 			background: $investor-clr;
+
+			img{
+				background: $investor-clr;
+			}
 		}
 		&.innovator{
 			background: $innovator-clr;
@@ -1662,10 +1667,12 @@ h1{
 				top: 50%;
 				@include transform(translateY(-50%));
 				left: 0px;
+				border-radius: 50%;
+				padding: 7px;
 			}
 
-			i.fa-check-circle{
-				color: #52bb66;
+			img.check{
+				background: #7abb68;
 			}
 			i.fa-clock-o{
 				color: #ff8841;

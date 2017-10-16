@@ -291,7 +291,7 @@
 									<div class="_hidden pt0">
 										<div class="s-messages">
 											<ul class="mes-list requests">
-												<li class="peach-bgr">
+												<li>
 													<div class="hover"></div>
 													<a href="#"></a>
 													<img src="templates/img/user_pic2.jpg" alt=""/>
@@ -308,7 +308,7 @@
 														</div>
 													</div>
 												</li>
-												<li class="peach-bgr">
+												<li>
 													<div class="hover"></div>
 													<a href="#"></a>
 													<img src="templates/img/user_pic1.jpg" alt=""/>
