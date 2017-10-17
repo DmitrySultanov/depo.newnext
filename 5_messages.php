@@ -73,7 +73,7 @@
 						<div class="search-form-dialogs form">
 							<form action="" target="post_form">
 								<div class="element">
-									<input type="text" name="search" placeholder="Поиск зявки по названию и номеру" />
+									<input type="text" name="search" placeholder="Поиск диалога" />
 									<button type="submit">Найти</button>
 								</div>
 							</form>
