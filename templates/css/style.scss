@@ -3510,6 +3510,17 @@ i.offline{
 			    display: block;
 			    font-family: 'OpenSans-Semibold';
 
+			    i.panton{
+			    	position: absolute;
+				    left: 10px;
+				    color: #2b609d;
+				    font-size: 21px;
+				    top: 50%;
+				    @include transform(translateY(-50%));
+				    width: 26px;
+				    text-align: center;
+			    }
+
 			    &:before{
 					content: '';
 					width: 18px;
