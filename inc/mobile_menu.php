@@ -1,7 +1,8 @@
 <!-- Левое меню -->
 <div class="pushy pushy-left">
 	<div class="main-ico">
-		<img src="templates/img/user_default.jpg" alt=""/>
+		<div class="cap flex"><div class="user flex"><i class="panton a">n</i></div></div>
+        <!-- <img src="templates/img/user_pic1.jpg" alt=""/> -->
 		<div class="main-name">Masha81</div>	
 	</div>
 	<ul class="top-nav">

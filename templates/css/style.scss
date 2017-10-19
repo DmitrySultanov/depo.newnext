@@ -3476,6 +3476,26 @@ i.offline{
 		padding: 20px 15px;
 		background: #dfe7ea;
 
+		.cap{
+			width: 68px;
+			height: 68px;
+			border-radius: 50%;
+
+			.user{
+				margin: auto;
+				background: #f8f9f9;
+				width: 68px;
+				height: 68px;
+				border-radius: 50%;
+
+				i{
+					color: #c5c8c8;
+					font-size: 34px;
+					margin: auto;
+				}
+			}
+		}
+
 		img{
 			max-width: 68px;
 			border-radius: 50%;
