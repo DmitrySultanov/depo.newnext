@@ -3116,7 +3116,7 @@ ul.blue-links{
 	z-index: 55!important;
 
 	strong{
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 20px;
 		color: #302e2e;
 		font-family: 'OpenSans-Semibold';
@@ -3150,6 +3150,10 @@ ul.blue-links{
 			}		
 
 			span{
+				font-size: 18px;
+				font-family: 'OpenSans-Semibold';
+				color: #302e2e;
+
 				&:after{
 					content: '';
 					background: url('../img/select-arrow.png');
@@ -3158,7 +3162,7 @@ ul.blue-links{
 					position: absolute;
 					right: -15px;
 					top: 50%;
-					margin-top: -3px;
+					margin-top: -1px;
 					@include transition(.3s);
 				}
 			}
@@ -3169,6 +3173,14 @@ ul.blue-links{
 			border-top: 1px solid #dee2e8;
 		}
 	}
+}
+
+.accordion-btn-wrap{
+	border-top: 1px solid #dfe7ea;
+	background: #fff;
+	text-align: center;
+	margin-top: -15px;
+	padding: 12px 0;
 }
 
 i.online{

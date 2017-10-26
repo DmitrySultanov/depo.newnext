@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Анкета инвестора</title>
+	<title>Анкета поставщик</title>
 	<? include('inc/head.php'); ?>
 </head>
 <body class="gray">
@@ -58,14 +58,14 @@
 			</div>
 		</header>
 		<div class="user-template">
-			<div class="after-header-panel investor clearfix">
+			<div class="after-header-panel provider">
 				<div class="container">
 					<div class="user-category">
-						<img src="templates/img/green_ok.png" alt=""/>
+						<img class="check" src="templates/img/tick-4.svg" alt="">
 						<div class="flex align">
 							<div>
-								<span>Инвестор</span>
-								<div class="status">В сети</div>
+								<span>Поставщик</span>
+								<!-- <div class="status">В сети</div> -->
 							</div>
 						</div>
 					</div>
@@ -89,7 +89,7 @@
 							<div class="side-block">
 								<div class="stage">
 									<div class="sb-title">
-										<h1 class="sm">Анкета инвестора</h1>
+										<h1 class="sm">Анкета поставщика</h1>
 									</div>
 									<div class="elements-group">
 										<div class="form fullWidth">
@@ -149,7 +149,55 @@
 								</div>
 
 								<div class="accordion mb-15">
-									
+									<!-- Деятельность -->
+									<div class="stage acc-item">
+										<div class="sb-title acc-title">
+											<span>Деятельность</span>
+										</div>
+										<div class="elements-group acc-hidden">
+											<div class="form fullWidth">
+												<form action="" target="post_form">
+													<div class="element selectReq">
+														<div class="row clearfix">
+															<div class="col-10">
+																<p>Отраслевая принадлежность</p>
+																<div class="select">
+																	<select name="sdsd1" multiple="multiple" class="select-req select-participant required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>Русский язык</option>
+																		<option>Английский язык</option>
+																		<option>Французский язык</option>
+																		<option>Испанский язык</option>
+																		<option>Арабский язык</option>
+																		<option>Немецкий язык</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="element selectReq">
+														<div class="row clearfix">
+															<div class="col-10">
+																<p>Регион</p>
+																<div class="select">
+																	<select name="sdsd2"  multiple="multiple" class="select-req select-participant required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>Самарская область</option>
+																		<option>Приморский край</option>
+																		<option>Ярославская область</option>
+																		<option>Калужская область</option>
+																		<option>Татарстан</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<button type="submit" class="orange-btn">Далее</button>
+												</form>
+											</div>
+										</div>
+									</div>
+									<!-- Образование -->
 									<div class="stage acc-item">
 										<div class="sb-title acc-title">
 											<span>Образование</span>
@@ -192,8 +240,71 @@
 											</div>
 										</div>
 									</div>
-
+									<!-- Карьера -->
 									<div class="stage acc-item">
+										<div class="sb-title acc-title">
+											<span>Карьера</span>
+										</div>
+										<div class="elements-group acc-hidden">
+											<div class="form fullWidth">
+												<form action="" target="post_form">
+													<div class="element">
+														<p>Профессиональная принадлежность</p>
+														<input type="text" class="required" name="professional-accessories" data-msg-required="Заполните поле" />
+													</div>
+													<div class="element">
+														<p>Специальность</p>
+														<input type="text" class="required" name="specialty" data-msg-required="Заполните поле" />
+													</div>
+													<div class="element selectReq">
+														<div class="row clearfix">
+															<div class="col-10">
+																<p>Занятость</p>
+																<div class="select-req">
+																	<select name="employment" data-placeholder="Не выбрано" class="select-single self-select--error required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>Полная</option>
+																		<option>Частичная</option>
+																		<option>Удаленная</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="element selectReq">
+														<div class="row clearfix">
+															<div class="col-9">
+																<p>Место работы</p>
+																<div class="select-req">
+																	<select name="work-place" data-placeholder="Выберите из списка" class="select-single self-select--error required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>Ваше место работы</option>
+																		<option>Ваше место работы</option>
+																		<option>Ваше место работы</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-3">
+																<p>Трудовой стаж</p>
+																<div class="select-req">
+																	<select name="seniority" data-placeholder="Не выбрано" class="select-single self-select--error required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>Полная</option>
+																		<option>Частичная</option>
+																		<option>Удаленная</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
+													<button type="submit" class="orange-btn">Далее</button>
+												</form>
+											</div>
+										</div>
+									</div>
+									<!-- Об инвестировании -->
+									<!-- <div class="stage acc-item">
 										<div class="sb-title acc-title">
 											<span>Об инвестировании</span>
 										</div>
@@ -317,8 +428,44 @@
 												</form>
 											</div>
 										</div>
+									</div> -->
+									<!-- Партнеры -->
+									<div class="stage acc-item">
+										<div class="sb-title acc-title">
+											<span>Партнеры</span>
+										</div>
+										<div class="elements-group acc-hidden">
+											<div class="form fullWidth">
+												<form action="" target="post_form">
+													<div class="element">
+														<p>Наименование партнера</p>
+														<input type="text" class="required" name="partner-name" data-msg-required="Заполните поле" />
+													</div>
+													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
+													<button type="submit" class="orange-btn">Далее</button>
+												</form>
+											</div>
+										</div>
 									</div>
-
+									<!-- Клиенты -->
+									<div class="stage acc-item">
+										<div class="sb-title acc-title">
+											<span>Клиенты</span>
+										</div>
+										<div class="elements-group acc-hidden">
+											<div class="form fullWidth">
+												<form action="" target="post_form">
+													<div class="element">
+														<p>Наименование клиента</p>
+														<input type="text" class="required" name="customer-name" data-msg-required="Заполните поле" />
+													</div>
+													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
+													<button type="submit" class="orange-btn">Далее</button>
+												</form>
+											</div>
+										</div>
+									</div>
+									<!-- Дополнительно -->
 									<div class="stage acc-item">
 										<div class="sb-title acc-title">
 											<span>Дополнительно</span>
@@ -370,17 +517,17 @@
 										</div>
 									</div>
 								</div>
-								
+							</div>
+							<div class="accordion-btn-wrap">
+								<button type="submit" class="orange-btn">Сохранить анкету</button>
 							</div>
 						</div>
 
 						<div class="rightcolumn">
 							<div class="attention-block" id="sticky">
-								<strong>Инвестор – это физическое или юридическое лицо, которое делает вложения 
-								собственных средств в инвестиционные проекты и продукты с целью получения прибыли.</strong>
-								<p>При вложении денежных средств инвестор преследует цель получить прибыль со 
-								своих вложений и заработать на инвестициях. Предполагатся единоличное (100%) 
-								инвестирование, без соинвесторов.</p>
+								<strong>Поставщик занимается поставками товаров или услуг.</strong>
+								<p>Поставщик размещает качественные характеристики поставляемого товара или услуги, 
+								а также параметры предполагаемых сделок, с целью поставки товаров или услуг заказчикам.</p>
 							</div>
 						</div>
 					</div>
