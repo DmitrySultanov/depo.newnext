@@ -135,12 +135,8 @@
 													</div>
 												</div>
 												<div class="element">
-													<p>Страна</p>
-													<input type="text" class="required" name="country" data-msg-required="Заполните поле" />
-												</div>
-												<div class="element">
-													<p>Город</p>
-													<input type="text" class="required" name="city" data-msg-required="Заполните поле" />
+													<p>Адрес проживания</p>
+													<input type="text" class="required" name="adress" data-msg-required="Заполните поле" placeholder="Начните вводить адрес" />
 												</div>
 												<button type="submit" class="orange-btn">Далее</button>
 											</form>
@@ -429,35 +425,80 @@
 											</div>
 										</div>
 									</div> -->
-									<!-- Партнеры -->
+									<!-- Профессиональный опыт -->
 									<div class="stage acc-item">
 										<div class="sb-title acc-title">
-											<span>Партнеры</span>
+											<span>Профессиональный опыт</span>
 										</div>
 										<div class="elements-group acc-hidden">
 											<div class="form fullWidth">
 												<form action="" target="post_form">
 													<div class="element">
-														<p>Наименование партнера</p>
-														<input type="text" class="required" name="partner-name" data-msg-required="Заполните поле" />
+														<p>Наименование проекта</p>
+														<input type="text" class="required" name="project-name" data-msg-required="Заполните поле" />
 													</div>
-													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
-													<button type="submit" class="orange-btn">Далее</button>
-												</form>
-											</div>
-										</div>
-									</div>
-									<!-- Клиенты -->
-									<div class="stage acc-item">
-										<div class="sb-title acc-title">
-											<span>Клиенты</span>
-										</div>
-										<div class="elements-group acc-hidden">
-											<div class="form fullWidth">
-												<form action="" target="post_form">
-													<div class="element">
-														<p>Наименование клиента</p>
-														<input type="text" class="required" name="customer-name" data-msg-required="Заполните поле" />
+													<div class="element selectReq">
+														<div class="row clearfix">
+															<div class="col-3">
+																<p>Год начала</p>
+																<div class="select-req">
+																	<select name="year_start" data-placeholder="Не выбрано" class="select-single self-select--error required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>2017</option>
+																		<option>2016</option>
+																		<option>2015</option>
+																		<option>2014</option>
+																		<option>2013</option>
+																		<option>2012</option>
+																		<option>2011</option>
+																		<option>2010</option>
+																		<option>2009</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-3">
+																<p>Год окончания</p>
+																<div class="select-req">
+																	<select name="year_ending" data-placeholder="Не выбрано" class="select-single self-select--error required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>2017</option>
+																		<option>2016</option>
+																		<option>2015</option>
+																		<option>2014</option>
+																		<option>2013</option>
+																		<option>2012</option>
+																		<option>2011</option>
+																		<option>2010</option>
+																		<option>2009</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-3">
+																<div class="checkbox">
+																	<label>
+																		<input type="checkbox"><i></i><span>Действующий</span>
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="element selectReq">
+														<div class="row clearfix">
+															<div class="col-10">
+																<p>Вид участия</p>
+																<div class="select">
+																	<select name="type-participation" multiple="multiple" class="select-req select-participant required" data-msg-required="Заполните поле">
+																		<option></option>
+																		<option>Русский язык</option>
+																		<option>Английский язык</option>
+																		<option>Французский язык</option>
+																		<option>Испанский язык</option>
+																		<option>Арабский язык</option>
+																		<option>Немецкий язык</option>
+																	</select>
+																</div>
+															</div>
+														</div>
 													</div>
 													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
 													<button type="submit" class="orange-btn">Далее</button>
@@ -509,7 +550,7 @@
 													</div>
 													<div class="element">
 														<p>Обо мне</p>
-														<input type="text" name="about" />
+														<input type="text" name="about" placeholder="Ваше сообщение" />
 													</div>
 													<button type="submit" class="orange-btn">Далее</button>
 												</form>

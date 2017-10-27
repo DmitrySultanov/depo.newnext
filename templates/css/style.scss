@@ -3116,7 +3116,7 @@ ul.blue-links{
 	z-index: 55!important;
 
 	strong{
-		font-size: 13px;
+		font-size: 14px;
 		line-height: 20px;
 		color: #302e2e;
 		font-family: 'OpenSans-Semibold';
@@ -3171,6 +3171,66 @@ ul.blue-links{
 		.acc-hidden{
 			display: none;
 			border-top: 1px solid #dee2e8;
+
+			.checkbox{
+				margin-left: 10px;
+			    display: inline-block;
+			    vertical-align: top;
+			    margin-top: 30px;
+
+				input[type="checkbox"]{
+					opacity: 0;
+					position: absolute;
+					width: 0;
+					overflow: hidden;
+
+					&:checked + i{
+
+						&:after{
+							@include transition(.3s);
+							@include transform(scale(1));
+						}
+					}
+				}
+
+				i{
+					width: 20px;
+					height: 20px;
+					border: 1px solid #dee2e8;
+					border-radius: 3px;
+					margin-right: 5px;
+					display: inline-block;
+					position: relative;
+
+					&:after{
+						content: '';
+						background: url('../img/green_ok2.png');
+						width: 15px;
+						height: 13px;
+						background-repeat: no-repeat;
+						@include background-size(contain);
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: -2px;
+						bottom: 0;
+						margin: auto;
+						@include transition(.3s);
+						@include transform(scale(0));
+					}
+				}
+
+				span{
+					font-size: 14px;
+					color: #302e2e;
+					line-height: 20px;
+					vertical-align: top;
+				}
+			}
+
+			.form .element.selectReq select+span.error, .form-pass-recovery .element.selectReq select+span.error{
+				margin-top: -1px;
+			}
 		}
 	}
 }

@@ -135,12 +135,8 @@
 													</div>
 												</div>
 												<div class="element">
-													<p>Страна</p>
-													<input type="text" class="required" name="country" data-msg-required="Заполните поле" />
-												</div>
-												<div class="element">
-													<p>Город</p>
-													<input type="text" class="required" name="city" data-msg-required="Заполните поле" />
+													<p>Адрес проживания</p>
+													<input type="text" class="required" name="adress" data-msg-required="Заполните поле" placeholder="Начните вводить адрес" />
 												</div>
 												<button type="submit" class="orange-btn">Далее</button>
 											</form>
@@ -509,7 +505,7 @@
 													</div>
 													<div class="element">
 														<p>Обо мне</p>
-														<input type="text" name="about" />
+														<input type="text" name="about" placeholder="Ваше сообщение" />
 													</div>
 													<button type="submit" class="orange-btn">Далее</button>
 												</form>
@@ -525,9 +521,7 @@
 
 						<div class="rightcolumn">
 							<div class="attention-block" id="sticky">
-								<strong>Эксперт - высококвалифицированный специалист в какой-либо области знания, 
-								привлекаемый для того, чтобы предоставить свое мнение, дать заключение по какому-либо 
-								вопросу, мнению, проекту.</strong>
+								<strong>Владеет методикой экономического, финансового, социального и т.п. анализа, является специалистом в какой-либо области знаний, привлекается для того, чтобы предоставить свое мнение, дать заключение по какому-либо вопросу, мнению, проекту, или это профессионал, предоставляющий консультационные услуги в определенной области: маркетинг, финансы, бухгалтерия, управление, продажи, машиностроение и т.п.</strong>
 							</div>
 						</div>
 					</div>

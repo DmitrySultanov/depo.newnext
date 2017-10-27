@@ -95,52 +95,48 @@
 										<div class="form fullWidth">
 											<form action="" target="post_form">
 												<div class="element">
-													<p>Фамилия</p>
+													<p>Наименование компании</p>
 													<input type="text" class="required" name="surname" data-msg-required="Заполните поле" />
 												</div>
-												<div class="element">
-													<p>Имя</p>
-													<input type="text" class="required" name="name" data-msg-required="Заполните поле" />
-												</div>
-												<div class="element">
-													<p>Отчество</p>
-													<input type="text" class="required" name="lastname" data-msg-required="Заполните поле" />
-												</div>
-												<div class="element selectReq--b">
+												<div class="element selectReq">
 													<div class="row clearfix">
-														<div class="col-3">
-															<p>Дата рождения </p>
-															<div class="input calendar">
-																<input type="text" autocomplete="off" name="datepicker" placeholder="дд-мм-гггг" class="required datepick" id="createDatepick" data-msg-required="Заполните поле">
+														<div class="col-9">
+															<p>Отрасль</p>
+															<div class="select">
+																<select name="sdsd4" multiple="multiple" class="select-req select-participant required" data-msg-required="Заполните поле">
+																	<option></option>
+																	<option>Машиностроение</option>
+																	<option>Деревообработка</option>
+																	<option>Торговля</option>
+																	<option>Сельское хозяйство</option>
+																</select>
 															</div>
-														</div>
-														<div class="col-3">
-															<p>Тип участника</p>
-															<select name="type_user" data-placeholder="Не выбрано" class="select-req select-single required" data-msg-required="Заполните поле">
-																<option></option>
-																<option>Новатор</option>
-																<option>Соинвестор</option>
-																<option>Проектор</option>
-															</select>
-														</div>
-														<div class="col-3">
-															<p>Семейное положение</p>
-															<select name="marstatus" data-placeholder="Не выбрано" class="select-req select-single required" data-msg-required="Заполните поле">
-																<option></option>
-																<option>Новатор</option>
-																<option>Соинвестор</option>
-																<option>Проектор</option>
-															</select>
 														</div>
 													</div>
 												</div>
 												<div class="element">
-													<p>Страна</p>
-													<input type="text" class="required" name="country" data-msg-required="Заполните поле" />
+													<p>Местонахождение</p>
+													<input type="text" class="required" name="place-company" data-msg-required="Заполните поле" />
 												</div>
 												<div class="element">
-													<p>Город</p>
-													<input type="text" class="required" name="city" data-msg-required="Заполните поле" />
+													<p>Сайт компании</p>
+													<input type="text" class="required" name="site-company" data-msg-required="Заполните поле" />
+												</div>
+												<div class="element">
+													<p>Email компании</p>
+													<input type="text" class="required" name="email-company" data-msg-required="Заполните поле" />
+												</div>
+												<div class="element">
+													<p>Телефон компании</p>
+													<input type="text" class="required" name="phone-company" data-msg-required="Заполните поле" />
+												</div>
+												<div class="element">
+													<p>ФИО представителя</p>
+													<input type="text" class="required" name="name-represent-company" data-msg-required="Заполните поле" />
+												</div>
+												<div class="element">
+													<p>О компании</p>
+													<input type="text" class="required" name="about-company" data-msg-required="Заполните поле" />
 												</div>
 												<button type="submit" class="orange-btn">Далее</button>
 											</form>
@@ -197,274 +193,6 @@
 											</div>
 										</div>
 									</div>
-									<!-- Образование -->
-									<div class="stage acc-item">
-										<div class="sb-title acc-title">
-											<span>Образование</span>
-										</div>
-										<div class="elements-group acc-hidden">
-											<div class="form fullWidth">
-												<form action="" target="post_form">
-													<div class="element selectReq">
-														<div class="row clearfix">
-															<div class="col-9">
-																<p>Учебное заведение</p>
-																<input type="text" class="required" name="institution" data-msg-required="Заполните поле" />
-															</div>
-															<div class="col-3">
-																<p>Год окончания</p>
-																<div class="select-req">
-																	<select name="year_ending" data-placeholder="Не выбрано" class="select-single self-select--error required" data-msg-required="Заполните поле">
-																		<option></option>
-																		<option>2017</option>
-																		<option>2016</option>
-																		<option>2015</option>
-																		<option>2014</option>
-																		<option>2013</option>
-																		<option>2012</option>
-																		<option>2011</option>
-																		<option>2010</option>
-																		<option>2009</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="element">
-														<p>Специальность</p>
-														<input type="text" class="required" name="specialty" data-msg-required="Заполните поле" />
-													</div>
-													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
-													<button type="submit" class="orange-btn">Далее</button>
-												</form>
-											</div>
-										</div>
-									</div>
-									<!-- Карьера -->
-									<div class="stage acc-item">
-										<div class="sb-title acc-title">
-											<span>Карьера</span>
-										</div>
-										<div class="elements-group acc-hidden">
-											<div class="form fullWidth">
-												<form action="" target="post_form">
-													<div class="element">
-														<p>Профессиональная принадлежность</p>
-														<input type="text" class="required" name="professional-accessories" data-msg-required="Заполните поле" />
-													</div>
-													<div class="element">
-														<p>Специальность</p>
-														<input type="text" class="required" name="specialty" data-msg-required="Заполните поле" />
-													</div>
-													<div class="element selectReq">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Занятость</p>
-																<div class="select-req">
-																	<select name="employment" data-placeholder="Не выбрано" class="select-single self-select--error required" data-msg-required="Заполните поле">
-																		<option></option>
-																		<option>Полная</option>
-																		<option>Частичная</option>
-																		<option>Удаленная</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="element selectReq">
-														<div class="row clearfix">
-															<div class="col-9">
-																<p>Место работы</p>
-																<div class="select-req">
-																	<select name="work-place" data-placeholder="Выберите из списка" class="select-single self-select--error required" data-msg-required="Заполните поле">
-																		<option></option>
-																		<option>Ваше место работы</option>
-																		<option>Ваше место работы</option>
-																		<option>Ваше место работы</option>
-																	</select>
-																</div>
-															</div>
-															<div class="col-3">
-																<p>Трудовой стаж</p>
-																<div class="select-req">
-																	<select name="seniority" data-placeholder="Не выбрано" class="select-single self-select--error required" data-msg-required="Заполните поле">
-																		<option></option>
-																		<option>Полная</option>
-																		<option>Частичная</option>
-																		<option>Удаленная</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
-													<button type="submit" class="orange-btn">Далее</button>
-												</form>
-											</div>
-										</div>
-									</div>
-									<!-- Об инвестировании -->
-									<!-- <div class="stage acc-item">
-										<div class="sb-title acc-title">
-											<span>Об инвестировании</span>
-										</div>
-										<div class="elements-group acc-hidden">
-											<div class="form fullWidth">
-												<form action="" target="post_form">
-													<div class="element">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Объем предполагаемых инвестиций</p>
-																<input type="text" class="required" name="institution" data-msg-required="Заполните поле" />
-															</div>
-															<div class="col-2">
-																<p></p>
-																<select name="currency" class="select-single required" data-msg-required="Заполните поле">
-																	<option>Рубль</option>
-																	<option>Доллар США</option>
-																	<option>Драхма</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<div class="element selectReq">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Отраслевая принадлежность</p>
-																<div class="select">
-																	<select name="sdsd1" multiple="multiple" class="select-req select-participant required" data-msg-required="Заполните поле">
-																		<option></option>
-																		<option>Русский язык</option>
-																		<option>Английский язык</option>
-																		<option>Французский язык</option>
-																		<option>Испанский язык</option>
-																		<option>Арабский язык</option>
-																		<option>Немецкий язык</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="element selectReq">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Регион инвестирования</p>
-																<div class="select">
-																	<select name="sdsd2"  multiple="multiple" class="select-req select-participant required" data-msg-required="Заполните поле">
-																		<option></option>
-																		<option>Русский язык</option>
-																		<option>Английский язык</option>
-																		<option>Французский язык</option>
-																		<option>Испанский язык</option>
-																		<option>Арабский язык</option>
-																		<option>Немецкий язык</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="element">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Срок инвестирования</p>
-																<input type="text" class="required" name="institution" data-msg-required="Заполните поле" />
-															</div>
-															<div class="col-2">
-																<p></p>
-																<select name="time_invest" class="select-single required" data-msg-required="Заполните поле">
-																	<option>Месяц</option>
-																	<option>Лет/Год</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<div class="element">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Срок окупаемости</p>
-																<input type="text" class="required" name="payback_period" data-msg-required="Заполните поле" />
-															</div>
-															<div class="col-2">
-																<p></p>
-																<select name="time_payback" class="select-single required" data-msg-required="Заполните поле">
-																	<option>Месяц</option>
-																	<option>Лет/Год</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<div class="element">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Ожидаемая доходность</p>
-																<input type="text" class="required" name="expected_return" data-msg-required="Заполните поле" />
-															</div>
-															<div class="col-2">
-																<p></p>
-																<select name="expected_return_type_currency" class="select-single required" data-msg-required="Заполните поле">
-																	<option>Рубль</option>
-																	<option>Доллар США</option>
-																	<option>Драхма</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<div class="element">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Опыт на рынке инвестирования</p>
-																<input type="text" class="required" name="experience_investment_market" data-msg-required="Заполните поле" />
-															</div>
-															<div class="col-2">
-																<p></p>
-																<select name="time_experience_investment_market" class="select-single required" data-msg-required="Заполните поле">
-																	<option>Лет/Год</option>
-																	<option>Месяц</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<button type="submit" class="orange-btn">Далее</button>
-												</form>
-											</div>
-										</div>
-									</div> -->
-									<!-- Партнеры -->
-									<div class="stage acc-item">
-										<div class="sb-title acc-title">
-											<span>Партнеры</span>
-										</div>
-										<div class="elements-group acc-hidden">
-											<div class="form fullWidth">
-												<form action="" target="post_form">
-													<div class="element">
-														<p>Наименование партнера</p>
-														<input type="text" class="required" name="partner-name" data-msg-required="Заполните поле" />
-													</div>
-													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
-													<button type="submit" class="orange-btn">Далее</button>
-												</form>
-											</div>
-										</div>
-									</div>
-									<!-- Клиенты -->
-									<div class="stage acc-item">
-										<div class="sb-title acc-title">
-											<span>Клиенты</span>
-										</div>
-										<div class="elements-group acc-hidden">
-											<div class="form fullWidth">
-												<form action="" target="post_form">
-													<div class="element">
-														<p>Наименование клиента</p>
-														<input type="text" class="required" name="customer-name" data-msg-required="Заполните поле" />
-													</div>
-													<div><button type="button" class="s-btn gray-btn add mb10">Добавить</button></div>
-													<button type="submit" class="orange-btn">Далее</button>
-												</form>
-											</div>
-										</div>
-									</div>
 									<!-- Дополнительно -->
 									<div class="stage acc-item">
 										<div class="sb-title acc-title">
@@ -484,32 +212,6 @@
 													<div class="element">
 														<p>Страница facebook</p>
 														<input type="text" name="fb_link" />
-													</div>
-													<div class="element">
-														<p>E-mail</p>
-														<input type="text" placeholder="test@mail.ru" name="email" />
-													</div>
-													<div class="element">
-														<div class="row clearfix">
-															<div class="col-10">
-																<p>Хобби</p>
-																<div class="select">
-																	<select name="hobby" multiple="multiple" class="select-nolimit">
-																		<option></option>
-																		<option>Танцы</option>
-																		<option>Живопись</option>
-																		<option>Турне</option>
-																		<option>Катание на гидроциклах</option>
-																		<option>Тир</option>
-																		<option>Спортивное ориентирование</option>
-																	</select>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="element">
-														<p>Обо мне</p>
-														<input type="text" name="about" />
 													</div>
 													<button type="submit" class="orange-btn">Далее</button>
 												</form>
