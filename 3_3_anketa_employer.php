@@ -98,22 +98,6 @@
 													<p>Наименование компании</p>
 													<input type="text" class="required" name="surname" data-msg-required="Заполните поле" />
 												</div>
-												<div class="element selectReq">
-													<div class="row clearfix">
-														<div class="col-9">
-															<p>Отрасль</p>
-															<div class="select">
-																<select name="sdsd4" multiple="multiple" class="select-req select-participant required" data-msg-required="Заполните поле">
-																	<option></option>
-																	<option>Машиностроение</option>
-																	<option>Деревообработка</option>
-																	<option>Торговля</option>
-																	<option>Сельское хозяйство</option>
-																</select>
-															</div>
-														</div>
-													</div>
-												</div>
 												<div class="element">
 													<p>Местонахождение</p>
 													<input type="text" class="required" name="place-company" data-msg-required="Заполните поле" />
