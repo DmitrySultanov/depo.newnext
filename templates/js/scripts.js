@@ -270,11 +270,18 @@ $(document).ready(function(){
     side: 'right'
   });
 
+  $('.tooltip-question').tooltipster({
+    theme: 'tooltipster-dark', 
+    interactive: true,
+    side: 'bottom',
+    minWidth: 275
+  });
+
 
   $('.tooltip-recovery-pass').tooltipster({
     theme: 'tooltipster-dark', 
     interactive: true,
-    side: 'bottom'
+    side: 'bottom', 
   });
 
   $('.tooltip-featured').tooltipster({
@@ -420,6 +427,24 @@ $(document).ready(function(){
 
     return null; // специальная клавиша
   }
+
+  function regMemeberTypesF(){
+    var $editBtn = $('.settings-phone-btn');
+    var $removeBtn = $('.add-member');
+
+    $editBtn.on('click', function(){
+      $('.settings-page ._hidden.change').slideDown();
+      return false
+    });
+
+    $removeBtn.on('click', function(){
+      $(this).hide();
+      $('.settings-page ._hidden.add').slideDown();
+      return false
+    });
+  }
+
+  regMemeberTypesF();
 
 });
 
